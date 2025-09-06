@@ -1,0 +1,91 @@
+/* Wrapper */
+.formone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full page center */
+  background: linear-gradient(135deg, #a3d8f4, #d7f5ef, #f3e8ff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card container */
+.loginone {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #ffffffcc; /* white with transparency */
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+#logo h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3a7ca5;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #cdd7e0;
+  border-radius: 0.7rem;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #3a7ca5;
+  box-shadow: 0 0 8px rgba(58, 124, 165, 0.3);
+}
+
+/* Error message */
+.error-msg {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* Button */
+button {
+  background: #3a7ca5;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #2d5f7c;
+  transform: scale(1.03);
+}
+
+/* Subtle fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
