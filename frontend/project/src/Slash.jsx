@@ -1,7 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './desiging/Slash.css';
+import { NavLink } from 'react-router';
 
 function Slash() {
+
+
+
   return (
     <>
       {/* Header */}
@@ -21,8 +25,12 @@ function Slash() {
         {/* User & Mentor */}
         <div className="main-div d-flex justify-content-center gap-5 mt-4"> 
           {/* ✅ added gap-5 for more spacing */}
-          <div className="choice-card">User</div>
-          <div className="choice-card">Mentor</div>
+          <NavLink to={'/User'} style={{textDecoration:"none", color:"inherit"}}>
+            <div className="choice-card">User</div>
+          </NavLink>
+          <NavLink to={'/Mentor'} style={{textDecoration:"none", color:"inherit"}}>
+            <div className="choice-card">Mentor</div>
+          </NavLink>
         </div>
       </main>
 
