@@ -1,0 +1,65 @@
+/* Background */
+body {
+  background: linear-gradient(to bottom right, #dbeafe, #fce7f3);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  padding-top: 2rem;   /* space between top and header box */
+  padding-bottom: 1rem;
+}
+
+.header-div h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d6efd;
+  margin: 0;
+}
+
+/* Heading */
+#heading h2 {
+  color: #1e3a8a;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Choice Cards */
+.choice-card {
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;                  /* ✅ make card a flexbox */
+  align-items: center;            /* ✅ vertical center */
+  justify-content: center;        /* ✅ horizontal center */
+  padding: 4rem 3rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0f766e;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  min-width: 280px;
+  max-width: 350px;
+  min-height: 200px;
+}
+
+.choice-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.25);
+  background-color: #ecfdf5;
+  border-color: #5eead4;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background: #f8f9fa;
+  color: #374151;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}

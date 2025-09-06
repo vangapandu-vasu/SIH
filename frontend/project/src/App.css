@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Background gradient for mental health vibe */
+body {
+  background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading styles */
+#heading h2 {
+  color: #004d40;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Choice cards (User/Mentor) */
+.choice-card {
+  background-color: #ffffff;
+  border: 2px solid #e3f2fd;
+  border-radius: 12px;   /* not sharp edges */
   padding: 2rem;
+  flex: 1;
+  margin: 0 1rem;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00796b;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Hover effect */
+.choice-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 121, 107, 0.2);
+  background-color: #e0f2f1;
+  border-color: #80deea;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Footer */
+.footer {
+  margin-top: auto;
+  background: #f8f9fa;
+  color: #555;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
 }
