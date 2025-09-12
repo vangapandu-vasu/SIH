@@ -11,7 +11,7 @@ function Slash() {
       {/* Header */}
       <header className="header bg-light shadow-sm">
         <div className="header-div text-center">
-          <h1 className="fw-bold text-primary">Logo</h1>
+          <h1 className="fw-bold text-primary">MIND MATE</h1>
         </div>
       </header>
 
